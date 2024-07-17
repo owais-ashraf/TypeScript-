@@ -1,0 +1,96 @@
+There are Six types of function in JavaScript 
+Named Function , arrow function , anonymous function
+
+
+1. Function Declaration (Named Function) 	
+	function add (){
+		console.log ("Hello World") 
+	}
+
+	add() // This will log Hello World
+	
+1a. Function Expression 
+	Here we define a function using a variable and store the returned value in that variable.
+	
+	let Hello = function (a, b){
+	console.log(a + b )
+	}
+	Hello(2, 3 ) //output will be 5 
+	
+1b.  Anonymous function expression
+	
+	const greet = function() {
+	    console.log("Hi there!");
+	};
+
+	greet(); // Output: Hi there!
+
+1c. 	 Named function expression
+	
+	const greetNamed = function greet() {
+	    console.log("Hi there!");
+	};
+
+	greetNamed(); // Output: Hi there!
+
+	
+2.  ANONYMOUS FUNCTION 
+	function (){
+	console.log("Hello")
+	}
+
+
+3.  ARROW FUNCTION
+	() => {}
+	
+4. IMMEDIATELY INVOKED FUNCTION EXPRESSION 
+	(function() {
+    	console.log("This is an IIFE!");
+	})(); // This is function invoked as its made we don't have to call it
+
+	(() => {
+	    console.log("This is an arrow function IIFE!");
+	})();
+
+
+
+
+	CallBack in javascript is like we make a function and in that function we call another function like 
+	function add (a, b, callback ){
+	console.log (a + b);  	// we gave 3 parameter like we log a  + b here   
+	callback(); 			// here we call the another function within the function 
+	}
+	
+	function greet (){
+	console.log("Hello World") 
+	}
+	
+	add(2, 4, greet) 		// in callback when we call the another function we only write 					
+						   function name without parenthesis .
+						   
+						   
+	The difference between Callback and Recursion is callback call the another function within the function while recursion function call itself in the function. . .
+
+
+PROMISES 
+	While create a promise we create new object constructor  (for Object constructor we use "new" keyword and constructor name with first letter capital, object constructor is used when 
+	want of make many object of same types  )
+	Promises ki kuch states hoti hain 
+	1. Pending 
+	2. Reslove   	-> .then()
+	3. Reject  	-> .catch()
+	ab kisi ne paise lye aur 2 din bad wapis kare ga to 2 din tk pending state hai aur 2 din bad ya to Resolve hoga ya to Reject. . 
+	Promise has built-in two parameter first one is resolve and second is reject we can give name whatever we want in the parameter but it represent resolve and reject 
+	Resolve -> .then()
+	Reject -> .catch() (.catch ap ek hi tim define karo to woh itna intelligent hai k error handling kar le ga but .then() k lye ap ko har bar batana parega.
+	
+	Promise k andar ek method hai .then ka (Method ka matlab kisi object k andar agar koi function define howa hai to us ko method kehte hain).
+	.then itself ek callback expect krta hai. . aur yeah then tab hi execute ho ga jab promise resolve ho ga otherwise yeah run nahi ho ga aur agr reject use krna hai to phr \
+	.catch use krna ho ga
+	aur ek aur method hota hai jo age ap ko chalana hi chalana hai to us k lye use hota hai 
+	.finally yeah na resolve p chalta hai na reject p chalta hai yeah aesa code hai. . 
+	
+ASYNC + AWAIT 
+	await jab hi chale ga jab async function hoga aur async function ham jab bante hain jab ham promises ka use kar rhe hote hain . . simple . . 
+	to promises me .then ya .catch ka method use krne se buhat easy hai k async + await ka use kare 
+	
