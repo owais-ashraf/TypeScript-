@@ -20,12 +20,13 @@ function washing (){
      console.log("Ironing Started . . .");
      return new Promise ((resolve , reject) => {
          setTimeout(() => {
-             resolve ("Ironing done. . .");
+             reject ("Ironing not done. . .");
          }, 2000);
      })
 };
 
 async function RunWashingMachine(){
+    try{
     const result1 = await washing();
     console.log(result1);
     console.log("##########################################################################################################");
@@ -35,5 +36,13 @@ async function RunWashingMachine(){
     const result3 = await iron();
     console.log(result3);
     console.log("##########################################################################################################");
+    }
+    catch(error){
+    console.log(error);
+    } finally {
+        console.log("It will run anyway");
+    }
 }
+console.log("Hello World");
 RunWashingMachine();
+console.log("Bye World");

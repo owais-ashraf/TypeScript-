@@ -104,7 +104,8 @@ ASYNC + AWAIT
 		 console.log ("try block") // yeah block jab tak execute hota rehta hai jab tak resolve k andar result aata rehta hai 
 		} catch (error){
 		console.log ("catch block") // yeah block jab execute hota hai jab ap ka koi promise reject hota hai
-		}	
-	
+		} finally {
+		console.log('It will run anyway') // is block ne chalna hi chalna hai 
+		}
 	
 	
