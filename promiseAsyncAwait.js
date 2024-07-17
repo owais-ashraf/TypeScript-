@@ -24,9 +24,15 @@ function iron() {
 }
 ;
 async function RunWashingMachine() {
-    await washing();
-    await soaking();
-    await iron();
+    const result1 = await washing();
+    console.log(result1);
+    console.log("##########################################################################################################");
+    const result2 = await soaking();
+    console.log(result2);
+    console.log("##########################################################################################################");
+    const result3 = await iron();
+    console.log(result3);
+    console.log("##########################################################################################################");
 }
 RunWashingMachine();
 export {};
