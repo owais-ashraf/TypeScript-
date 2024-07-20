@@ -107,5 +107,7 @@ ASYNC + AWAIT
 		} finally {
 		console.log('It will run anyway') // is block ne chalna hi chalna hai 
 		}
+		
+top level await
 	
 	
