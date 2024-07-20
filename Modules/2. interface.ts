@@ -1,4 +1,4 @@
-export interface Students {
+export interface Students { //export inrfaece to other files 
     fName: string,
     lName: string,
     rollNo: number,

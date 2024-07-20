@@ -1,4 +1,6 @@
-import students from "./data";
+//all functions are wrtitten or all task in note.txt are here which we are consoling in 4. index.ts 
+
+import students from "./1. data";
 export const getAllStudents = () => {
 
     return students;

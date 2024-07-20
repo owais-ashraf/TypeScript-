@@ -1,4 +1,4 @@
-import { Students , Entrytest} from './interface';
+import { Students , Entrytest} from './2. interface'; // importing interface from 2. interface.ts file
 
 const students: Students[] = [{
     id: 1,
