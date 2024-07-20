@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function washing(callback) {
     console.log('Washing started . . .');
     setTimeout(() => {
@@ -26,7 +28,6 @@ washing(function () {
         iron();
     });
 });
-export {};
 // function sayHello() {
 //     console.log(`Hello this is ${a} and my brother ${b} saying this to the world`);
 // }

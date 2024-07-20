@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Start ...");
 let MyName = "Ozil";
 console.log(MyName);
@@ -20,4 +22,3 @@ let NewCar = {
 console.log(NewCar["brand"]);
 console.log(NewCar.year);
 console.log("The End ...");
-export {};

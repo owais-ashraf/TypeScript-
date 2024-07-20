@@ -1,9 +1,9 @@
-- create student data 
-- get all students list 
-- get entry test passed students list 
-- get onSite student list 
-- get student data
-- check student is onsite allowed
+- create student data                          // done 
+- get all students list                        // done 
+- get entry test passed students list          // done 
+- get onSite student list                      // done 
+- find student by Roll #                       // done 
+- check student by Roll # is onsite allowed    // done 
 
 
 import and export

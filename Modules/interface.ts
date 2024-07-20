@@ -1,8 +1,4 @@
-interface Entrytest {
-
-}
-
-interface Student {
+export interface Students {
     fName: string,
     lName: string,
     rollNo: number,
@@ -10,4 +6,10 @@ interface Student {
     email: string,
     isOnSiteAllowed: boolean,
     entryTest: Entrytest
+}
+
+export interface Entrytest {
+        isPassed: boolean,
+        obtainedMaks: number,
+        totalMarks: number,
 }

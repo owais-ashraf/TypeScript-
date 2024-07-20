@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 function washing() {
     console.log("Wasing Started . . .");
     return new Promise((resolve, reject) => {
@@ -45,4 +47,3 @@ async function RunWashingMachine() {
 console.log("Hello World");
 RunWashingMachine();
 console.log("Bye World");
-export {};

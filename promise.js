@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let moneyBorrow = new Promise((resolve, reject) => {
     setTimeout(() => {
         reject("Failure");
@@ -12,4 +14,3 @@ moneyBorrow
     console.log(value);
     console.log("Please pay your money");
 });
-export {};
