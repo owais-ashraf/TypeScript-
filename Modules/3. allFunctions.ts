@@ -23,11 +23,10 @@ export const findStudents = (rollNum : number) => {
 }
 
 export const isOnSiteAllowed = (rollNum: number) => {
-    const isAllowedinCamp = students.find((student)=> student.rollNo === rollNum && student.isOnSiteAllowed === true)
+    const isAllowedinCamp = students.find((student)=> student.rollNo === rollNum && student.isOnSiteAllowed)
     if (isAllowedinCamp){
-        return true;
+        console.log("This student is allowed on site");
     }else {
-        return false; 
-
+        console.log("This student is not allowed on site");
     }
 }

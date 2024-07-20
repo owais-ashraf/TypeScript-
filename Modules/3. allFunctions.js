@@ -26,12 +26,12 @@ const findStudents = (rollNum) => {
 };
 exports.findStudents = findStudents;
 const isOnSiteAllowed = (rollNum) => {
-    const isAllowedinCamp = _1__data_1.default.find((student) => student.rollNo === rollNum && student.isOnSiteAllowed === true);
+    const isAllowedinCamp = _1__data_1.default.find((student) => student.rollNo === rollNum && student.isOnSiteAllowed);
     if (isAllowedinCamp) {
-        return true;
+        console.log("This student is allowed on site");
     }
     else {
-        return false;
+        console.log("This student is not allowed on site");
     }
 };
 exports.isOnSiteAllowed = isOnSiteAllowed;
